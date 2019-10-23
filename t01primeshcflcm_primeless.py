@@ -2,8 +2,7 @@
 
 num = int(input("num: "))
 primes = [1] * 500000
-primes[0] = 0
- 
+primes[0] = 0 
 for i in range(3, 1000, 2):
     if primes[i // 2]:
         primes[(i * i) // 2::i] = [0] * len(primes[(i * i) // 2::i])
